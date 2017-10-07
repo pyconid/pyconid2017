@@ -23,6 +23,7 @@ source env/bin/active
 **Run:**
 
 `make html`
+
 `cd output && python3 -m http.server 8087`
 
 ### TODO:
