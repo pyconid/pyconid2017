@@ -1,5 +1,30 @@
 ## Official Website PyCon Indonesia
 
+## Getting started
+
+```bash
+git clone https://github.com/pyconid/pyconid.github.io.git pyconid-2017
+cd pyconid-2017
+python3 -m venv env
+source env/bin/active
+```
+
+## Usage
+
+**Install the dependencies:**
+
+`pip install -r requirements.ini -e .` or 
+
+**Make environment config from .dist:**
+
+`cp config/environment.dist.json config/environment.json`
+
+
+**Run:**
+
+`make html`
+`cd output && python3 -m http.server 8087`
+
 ### TODO:
      
 
