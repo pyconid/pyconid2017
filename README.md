@@ -13,7 +13,7 @@ source env/bin/active
 
 **Install the dependencies:**
 
-`pip install -r requirements.ini -e .` or 
+`pip install -r requirements.ini -e .`
 
 **Make environment config from .dist:**
 
