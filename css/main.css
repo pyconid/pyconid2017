@@ -1624,7 +1624,7 @@
 
 	body {
 		background-color: #86408f;
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #52408f 15%, #86408f 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #52408f 15%, #210125 85%);
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3707,7 +3707,7 @@
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
   }
-  
+
   #footer.alt .logo img{
     display: block;
     margin: 15px 0;
