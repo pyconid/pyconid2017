@@ -133,12 +133,15 @@
     {
         padding: 10px 0;
         font-size: 22px;
+    }
+
+    #menu li > a {
         text-decoration: none;
         color: #232323;
         transition: color 0.3s ease;
     }
 
-    #menu li:hover
+    #menu li > a:hover
     {
         color: tomato;
     }
