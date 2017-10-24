@@ -15,30 +15,6 @@
  * prefixes.
  */
 
-    body
-    {
-        margin: 0;
-        padding: 0;
-
-        /* make it look decent enough */
-        background: #232323;
-        color: #cdcdcd;
-        font-family: "Avenir Next", "Avenir", sans-serif;
-    }
-
-    a
-    {
-        text-decoration: none;
-        color: #232323;
-
-        transition: color 0.3s ease;
-    }
-
-    a:hover
-    {
-        color: tomato;
-    }
-
     #menuToggle
     {
         display: block;
@@ -157,6 +133,17 @@
     {
         padding: 10px 0;
         font-size: 22px;
+    }
+
+    #menu li > a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menu li > a:hover
+    {
+        color: tomato;
     }
 
     /*
