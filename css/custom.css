@@ -14,11 +14,17 @@
  * production code, beware of the browser
  * prefixes.
  */
+    .nav 
+    {
+        position: fixed;
+        z-index: 10001;
+        height: 100%;
+    }
 
     #menuToggle
     {
         display: block;
-        position: relative;
+        position: absolute;
         top: 30px;
         left: 30px;
 
@@ -112,11 +118,14 @@
      */
     #menu
     {
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 300px;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
+        height: 100%;
+        margin: 0;
+        padding: 30px;
+        padding-top: 80px;
 
         background: #ededed;
         list-style-type: none;
