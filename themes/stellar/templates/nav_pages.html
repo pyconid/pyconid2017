@@ -1,27 +1,21 @@
 <nav id="nav">
   <ul>
-    <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+    <li class="current">
+      <a href="/">
+        <span class="icon fa-home"></span>&nbsp;Home</a>
+    </li>
     {% if DISPLAY_PAGES_ON_MENU %} {% for page in PAGES %}
     <li>
       <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
     </li>
-    {% endfor %} {% endif %} {% for title, link in MENUITEMS %}
+    {% endfor %} {% endif %}
     <li>
-      <a href="{{ link }}">{{ title }}</a>
-    </li>
-    {% endfor %}
-    <li class="submenu">
-      <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Blog</a>
-      <ul>
-        {% for cat, null in categories %} {% if cat != 'blog' %}
-        <li {% if cat==c ategory %}class="active" {% endif %}>
-          <a href="{{ SITEURL }}/category/{{ cat|lower }}/">{{ cat }}</a>
-        </li>
-        {% endif %} {% endfor %}
-      </ul>
+      <a class="button special" href="/schedules" target="blank">
+        <span class="icon fa-calendar"></span>&nbsp;Schedules</a>
     </li>
     <li>
-      <a href="#" class="button special">Sign Up</a>
+      <a class="button special" href="http://ticket.pycon.id" target="blank">
+        <span class="icon fa-ticket"></span>&nbsp;Ticket</a>
     </li>
   </ul>
 </nav>

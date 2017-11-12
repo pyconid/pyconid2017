@@ -1624,7 +1624,7 @@
 
 	body {
 		background-color: #86408f;
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #52408f 15%, #86408f 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #52408f 15%, #210125 85%);
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2015,8 +2015,8 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #8cc9f0;
-			color: #ffffff !important;
+			background-color: #86408f;
+			color: #fff;
 			box-shadow: none;
 		}
 
@@ -2025,7 +2025,8 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9acff2;
+        background-color: #cfa9d4 !important;
+        color: #86408f !important;
 			}
 
 			input[type="submit"].special:active,
@@ -3034,7 +3035,7 @@
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				width: 11em;
 			}
 
 		@media screen and (max-width: 980px) {

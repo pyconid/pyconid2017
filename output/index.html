@@ -6,10 +6,11 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
   <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
@@ -20,37 +21,93 @@
 
 <body>
 
+  <!--    Made by Erik Terwan    -->
+  <!--   24th of November 2015   -->
+  <!--    All rights reserved    -->
+  <nav class="nav" role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+
+      <!--
+      Some spans to act as a hamburger.
+
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="http://ticket.pycon.id">TICKET</a>
+        </li>
+        <li>
+          <a href="/cfp.html">Call For Papers</a>
+        </li>
+        <li>
+          <a href="/coc.html">Code of Conduct</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Wrapper -->
   <div id="wrapper">
     <!-- Header -->
     <header id="header" class="alt">
       <span class="logo">
-        <img src="images/logo.png" alt="" />
+        <a href="/index.html">
+          <img src="/images/logo.png" alt="" />
+        </a>
       </span>
-      <p>S H O W &nbsp; & &nbsp; T A K E</p>
+      <p>Politeknik Elektronika Negeri Surabaya, 9 Desember 2017</p>
+      <p>A NEW BEGINNING</p>
     </header>
 
  <!-- Nav -->
 <nav id="nav">
   <ul>
     <li>
-      <a href="#cfp" class="active">CFP</a>
-    </li>
-    <li>
-      <a href="#sponsor">Sponsorships</a>
-    </li>
-    <li>
       <a href="#about">About PyCon ID</a>
     </li>
     <li>
+      <a href="#speakers">Speakers</a>
+    </li>
+    <!-- <li>
+      <a href="#cfp" class="active">CFP</a>
+    </li> -->
+    <li>
+      <a href="#sponsor">Sponsors</a>
+    </li>
+    <li>
       <a href="#coc">Code of Conduct</a>
+    </li>
+    <li>
+      <a class="button special" href="/schedules" target="blank">
+        <span class="icon fa-calendar"></span>&nbsp;Schedules</a>
+    </li>
+    <li>
+      <a class="button special" href="http://ticket.pycon.id" target="blank">
+        <span class="icon fa-ticket"></span>&nbsp;Ticket</a>
     </li>
   </ul>
 </nav><!-- Main -->
 <div id="main">
 
   <!-- Call For Papers -->
-  <section id="cfp" class="main">
+  <!-- <section id="cfp" class="main">
     <div class="spotlight">
       <div class="content">
         <header class="major">
@@ -73,10 +130,137 @@
         <img src="images/pic01.jpg" alt="" />
       </span>
     </div>
+  </section> -->
+  <!-- About Section -->
+  <section id="about" class="main special">
+    <header class="major">
+      <h2>About PyCon Indonesia 2017</h2>
+      <p>PyCon Indonesia is a conference where Python users, or people interested in Python, gather to learn from each other
+        and meet other members of the community. We hope that everyone joining PyCon ID will not only learn new and exciting
+        things, but also meet new friends and strengthen the connection with the community, and thus the community itself.
+        This year, we chose "A new Beginning" as our theme. The Pycon ID staff is continuing to work hard on making a conference
+        that will allow everyone to have a great time and unlock new possibilities through Python.</p>
+    </header>
+    <ul class="statistics">
+      <!-- <li class="style1">
+          <span class="icon fa-code-fork"></span>
+          <strong></strong> Etiam
+        </li>
+        <li class="style2">
+          <span class="icon fa-folder-open-o"></span>
+          <strong>8,192</strong> Magna
+        </li> -->
+      <li class="style5">
+        <span class="icon fa-diamond"></span>
+        <strong>2</strong> Keynote Speakers
+      </li>
+      <li class="style3">
+        <span class="icon fa-signal"></span>
+        <strong>200</strong> Participants
+      </li>
+      <li class="style4">
+        <span class="icon fa-laptop"></span>
+        <strong>18</strong> Speakers
+      </li>
+
+    </ul>
+
+    <footer class="major">
+      <!-- <ul class="actions">
+          <li>
+            <a href="generic.html" class="button">Learn More</a>
+          </li>
+        </ul> -->
+    </footer>
+  </section>
+
+  <section id="speakers" class="main">
+    <div class="spotlight">
+      <div class="content">
+        <header class="major">
+          <h2>Keynote Speaker</h2>
+        </header>
+        <h3>Dondy Bappedyanto</h3>
+        <p>Dondy Bappedyanto is a technology executive with more than 15 years of experience, ranging from general management,
+          product development, technical operations and technical strategy.</p>
+        <p>Since 2008, Dondy has focused in Cloud Computing and Hosting Industry in Indonesia which with his technological innovation
+          and customer service excellence approach as well as his out of the box leadership has change the shape of the industry
+          in Indonesia.</p>
+        <p>Actively speaking in various IT events about Cloud Computing, Dondy is also regarded as one of the reputable source
+          for the cloud industry. He has been interviewed and quoted by several respectable publication in Indonesia as well
+          as abroad.</p>
+        <!-- <ul class="actions">
+            <li>
+              <a href="cfp.html" class="button">Call for Paper</a>
+            </li>
+          </ul> -->
+      </div>
+      <span class="image">
+        <img src="/images/speakers/dondyx.jpg" alt="" />
+      </span>
+    </div>
+    <!-- <div class="spotlight">
+        <div class="content">
+          <h3>Dondy Bappedyanto</h3>
+          <p>Dondy Bappedyanto is a technology executive with more than 15 years of experience, ranging from general management, product development, technical operations and technical strategy.</p>
+          <p>Since 2008, Dondy has focused in Cloud Computing and Hosting Industry in Indonesia which with his technological innovation and customer service excellence approach as well as his out of the box leadership has change the shape of the industry in Indonesia.</p>
+        </div>
+        <span class="image">
+          <img src="images/speakers/dondyx.jpg" alt="" />
+        </span>
+      </div> -->
+    <header class="major">
+      <h2>Speakers</h2>
+      <p>
+      </p>
+    </header>
+    <div align="center">
+      <ul class="features">
+        <li>
+          <img height="150px" src="/images/speakers/tanging.jpg" alt="Tang Ing Wei" />
+          <h4 style="margin-bottom:0px">Tang Ing Wei</h4>
+          <i>ROKKI Avionics Sdn. Bhd.</i>
+        </li>
+        <li>
+          <img height="150px" src="/images/speakers/afif.jpg" alt="Afif" />
+          <h4 style="margin-bottom:0px">Afif Akbar Iskandar</h4>
+          <i>Kumparan</i>
+        </li>
+        <li>
+          <img height="150px" src="/images/speakers/hendra.jpg" alt="Hendra" />
+          <h4 style="margin-bottom:0px">Hendra Kusumah</h4>
+          <i>STMIK Raharja</i>
+        </li>
+        <li>
+          <img height="150px" src="./mages/speakers/rishaldyx.jpg" alt="Rishaldy" />
+          <h4 style="margin-bottom:0px">Rishaldy Prisly</h4>
+          <i>STMIK Raharja</i>
+        </li>
+        <li>
+          <img height="150px" src="/images/speakers/imaduddin.jpg" alt="Imaduddin" />
+          <h4 style="margin-bottom:0px">Imaduddin Amin</h4>
+          <i>Pulse Lab Jakarta</i>
+        </li>
+        <li>
+          <img height="150px" src="/images/speakers/galuhx.jpg" alt="Galuh" />
+          <h4 style="margin-bottom:0px">Galuh Tunggadewi Sahid</h4>
+          <i>University of Indonesia</i>
+        </li>
+        <li>
+          <img height="150px" src="/images/speakers/mapujji.jpg" alt="Abdurrachman Mappuji" />
+          <h4 style="margin-bottom:0px">Abdurrachman Mappuji</h4>
+          <i>Midtrans</i>
+        </li>
+        <!-- <li>
+          <img height="80px" src="images/speakers/tanging.jpg" alt="X" />
+          <h4>X</h4>
+        </li> -->
+      </ul>
+    </div>
   </section>
 
   <!-- sponsorship Section -->
-  <section id="sponsor" class="main special">
+  <!-- <section id="sponsor" class="main special">
     <header class="major">
       <h2>Sponsorships</h2>
       <p>
@@ -120,53 +304,63 @@
         </li>
       </ul>
     </footer>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="main special">
+  </section> -->
+  <section id="sponsor" class="main special">
     <header class="major">
-      <h2>About PyCon Indonesia 2017</h2>
-      <p>PyCon ID is a conference where Python users, or people interested in Python, gather to learn from each other and meet
-        other members of the community. We hope that everyone joining PyCon ID will not only learn new and exciting things,
-        but also meet new friends and strengthen the connection with the community, and thus the community itself. This year,
-        we chose "Show & Take" as our theme. The Pycon ID staff is continuing to work hard on making a conference that will
-        allow everyone to have a great time and unlock new possibilities through Python.</p>
+      <h2>Sponsors</h2>
+      <p>
+      </p>
     </header>
-    <ul class="statistics">
-      <li class="style1">
-        <span class="icon fa-code-fork"></span>
-        <strong>5,120</strong> Etiam
-      </li>
-      <li class="style2">
-        <span class="icon fa-folder-open-o"></span>
-        <strong>8,192</strong> Magna
-      </li>
-      <li class="style3">
-        <span class="icon fa-signal"></span>
-        <strong>2,048</strong> Tempus
-      </li>
-      <li class="style4">
-        <span class="icon fa-laptop"></span>
-        <strong>4,096</strong> Aliquam
-      </li>
-      <li class="style5">
-        <span class="icon fa-diamond"></span>
-        <strong>1,024</strong> Nullam
+    <h2>Diamond Sponsor</h2>
+    <ul class="features">
+      <li>
+        <img height="80px" src="/images/sponsors/biznet.png" alt="Biznet Gio Cloud" />
+        <h4>Biznet Gio Cloud</h4>
       </li>
     </ul>
-    <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci
-      mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan
-      sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis
-      est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor.
-      Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui
-      curabitur lacinia.</p>
-    <footer class="major">
-      <ul class="actions">
-        <li>
-          <a href="generic.html" class="button">Learn More</a>
-        </li>
-      </ul>
-    </footer>
+    <h2>Platinum Sponsor</h2>
+    <ul class="features">
+      <li>
+        <img height="80px" src="/images/sponsors/psf.png" alt="PSF" />
+        <h4>Python Software Foundation</h4>
+      </li>
+    </ul>
+    <h3>Supported by</h3>
+    <ul class="features">
+      <li>
+        <img height="50px" src="/images/sponsors/perkodi.png" alt="PERKODI" />
+        <p>PERKODI</p>
+      </li>
+      <li>
+        <img height="50px" src="/images/sponsors/surabayapy.png" alt="SurabayaPy" />
+        <p>SurabayaPy</p>
+      </li>
+    </ul>
+    <h3>Payment Partner</h3>
+    <ul class="features">
+      <li>
+        <img height="50px" src="/images/sponsors/valutac.png" alt="Valutac" />
+        <p>Valutac</p>
+      </li>
+      <li>
+        <img height="50px" src="/images/sponsors/prism.png" alt="Prism" />
+        <p>Prism</p>
+      </li>
+    </ul>
+    <h3>Media Partner</h3>
+    <ul class="features">
+      <li>
+        <img height="50px" src="/images/sponsors/codepolitan.png" alt="CODEPOLITAN" />
+        <p>CODEPOLITAN</p>
+      </li>
+    </ul>
+    <!-- <footer class="major">
+        <ul class="actions">
+          <li>
+            <a href="sponsorship.html" class="button">Learn More</a>
+          </li>
+        </ul>
+      </footer> -->
   </section>
 
   <!-- Code of Conduct -->
@@ -181,10 +375,7 @@
     <footer class="major">
       <ul class="actions">
         <li>
-          <a href="generic.html" class="button special">Get Started</a>
-        </li>
-        <li>
-          <a href="generic.html" class="button">Learn More</a>
+          <a href="/code-of-conduct" class="button special">Code of Conduct</a>
         </li>
       </ul>
     </footer>
@@ -196,26 +387,19 @@
   <section>
     <h2>PyCon Indonesia 2017</h2>
     <span class="logo">
-      <img src="images/logo-no.png" alt="" />
+      <img src="/images/logo-no.png" alt="" />
     </span>
-    <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget
-      dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-    <ul class="actions">
-      <li>
-        <a href="generic.html" class="button">Learn More</a>
-      </li>
-    </ul>
+    <p>PyCon Indonesia is a largest Python conference in Indonesia where Python users, or people interested in Python, gather
+      to learn from each other and meet other members of the community. We chose "A new Beginning" as our theme.</p>
   </section>
   <section>
-    <h2>Respect, Diversity at PyCon Indonesia 2017</h2>
+    <h2>A new beginning at PyCon Indonesia 2017</h2>
     <dl class="alt">
-      <dt>Address</dt>
-      <dd>Jemursari &bull; 15B, EastJava &bull; Indonesia</dd>
-      <dt>Phone</dt>
-      <dd>(000) 000-0000 x 0000</dd>
+      <dt>Location</dt>
+      <dd>Politeknik Elektronika Negeri Surabaya, Indonesia</dd>
       <dt>Email</dt>
       <dd>
-        <a href="#">info@pycon.id</a>
+        <a href="#">conf@python.or.id</a>
       </dd>
     </dl>
     <ul class="icons">
@@ -250,7 +434,7 @@
 </footer>  </div>
 
   <!-- Scripts -->
-  <script src="js/jquery.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
   <script src="/js/jquery.scrollex.min.js"></script>
   <script src="/js/jquery.scrolly.min.js"></script>
   <script src="/js/skel.min.js"></script>
