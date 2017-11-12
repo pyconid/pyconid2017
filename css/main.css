@@ -2015,8 +2015,8 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #8cc9f0;
-			color: #ffffff !important;
+			background-color: #86408f;
+			color: #fff;
 			box-shadow: none;
 		}
 
@@ -2025,7 +2025,8 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9acff2;
+        background-color: #cfa9d4 !important;
+        color: #86408f !important;
 			}
 
 			input[type="submit"].special:active,
@@ -3034,7 +3035,7 @@
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 10em;
+				width: 11em;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3707,7 +3708,7 @@
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
   }
-
+  
   #footer.alt .logo img{
     display: block;
     margin: 15px 0;
