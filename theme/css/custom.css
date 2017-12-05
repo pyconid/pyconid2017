@@ -162,3 +162,39 @@
   {
       transform: none;
   }
+
+
+table, thead, tbody, tfoot, tr, th, td {
+  display: block; /* Set all of our table elements to display type block */
+}
+ 
+/* And here we will set our table to act normally after we hit 1024px */
+@media only screen and (min-width: 1024px) {
+    table { display: table; }
+    thead { display: table-header-group; }
+    tbody { display: table-row-group; }
+    tfoot { display: table-footer-group; }
+    tr { display: table-row; }
+    th, td { display: table-cell; }
+}
+
+td:first-child {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+ 
+td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    padding: 10px;
+}
+
+td:nth-child(2) {
+  min-height: 95px;
+}
+ 
+td {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #ddd;
+}
